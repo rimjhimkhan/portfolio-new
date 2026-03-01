@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimjhim Khan | UI/UX Designer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #fceff9, #e0f7fa);
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav h2{
+    color:#ff4da6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff4da6;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 10%;
+}
+
+/* INTRO */
+
+#intro{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#intro img{
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.intro-text h1{
+    font-size:42px;
+    color:#ff4da6;
+}
+
+.intro-text h3{
+    margin:15px 0;
+    font-weight:500;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#ff4da6;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e60073;
+}
+
+/* ABOUT */
+
+#about{
+    text-align:center;
+}
+
+#about p{
+    max-width:700px;
+    margin:20px auto;
+    line-height:1.7;
+}
+
+/* PROJECTS */
+
+.projects-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+    margin-top:40px;
+    width:90%;
+    margin:auto;
+}
+
+.project-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card img,
+.project-card video{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* EDUCATION */
+
+.education-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    max-width:700px;
+    margin:20px auto;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* HIRE ME */
+
+#hire{
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:#ff4da6;
+    color:white;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#fff;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Rimjhim Khan</h2>
+    <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#hire">Hire Me</a></li>
+    </ul>
+</nav>
+
+<!-- INTRO -->
+<section id="intro">
+    <div class="intro-text">
+        <h1>Hello, I'm Rimjhim 👋</h1>
+        <h3>UI/UX Designer & Creative Thinker</h3>
+        <p>
+            Passionate about Product Design, Mobile & Website Design,
+            Human-Computer Interaction and user behavior psychology.
+        </p>
+        <a href="#hire" class="btn">Hire Me</a>
+    </div>
+    <img src="images/profile.jpg" alt="Profile Photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am currently pursuing Bachelor of Computer Application (2024–2028)
+        at Adamas University with CGPA 7.5.
+        I specialize in UI/UX Design, Prototyping (Figma),
+        Responsive Web & Mobile Design, Typography & Color Theory.
+    </p>
+    <p>
+        Tools: Figma, Adobe XD, Canva | Basic HTML & CSS
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 style="text-align:center;">Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 (VIDEO) -->
+        <div class="project-card">
+
+            <video controls height="200" width="250" poster="images/profile2.jpg">
+                <source src="media/app-prototype.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Interactive App Prototype</h3>
+            <p>
+                High-fidelity mobile UI prototype built in Figma.
+                Includes swipe gestures, smooth screen transitions,
+                micro-interactions, auto-layout and reusable components
+                to simulate real user interaction.
+            </p>
+        </div>
+
+
+        <!-- Project 2 (IMAGE) -->
+        <div class="project-card">
+            <img src="images/project2.jpg" alt="Bakery Landing Page">
+
+            <h3>Bakery Landing Page UI/UX</h3>
+            <p>
+                Designed a visually engaging bakery landing page focusing
+                on strong CTA placement, gradient typography, brand identity
+                and clean navigation structure.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 style="text-align:center;">Education</h2>
+
+    <div class="education-card">
+        <h3>Bachelor of Computer Application</h3>
+        <p>Adamas University (2024–2028)</p>
+        <p>CGPA: 7.5/10</p>
+    </div>
+
+    <div class="education-card">
+        <h3>Class XII – AHS</h3>
+        <p>65% (2022–2024)</p>
+    </div>
+
+    <div class="education-card">
+        <h3>Class X – ASKGHS</h3>
+        <p>78% (2016–2022)</p>
+    </div>
+
+</section>
+
+<!-- HIRE ME -->
+<section id="hire">
+    <h2>Hire Me</h2>
+    <p>Email: rimjhimkhan1010@gmail.com</p>
+    <p>Phone: +91 8293867097</p>
+
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Rimjhim Khan | UI/UX Designer
+</footer>
+
+<script>
+function submitForm(event){
+    event.preventDefault();
+    alert("Thank you! I will get back to you soon 😊");
+}
+</script>
+
+</body>
+</html>
